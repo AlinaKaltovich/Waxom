@@ -1,4 +1,10 @@
 @font-face {
+    font-family: 'Montserrat ultra light, sans-serif';
+    src: url('../fonts/Montserrat-UltraLight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
     font-family: 'Montserrat light, sans-serif';
     src: url('../fonts/montserratlight.woff') format('woff');
     font-weight: 300;
@@ -30,6 +36,18 @@
     font-style: normal;
 }
 @font-face {
+    font-family: 'Raleway medium, sans-serif';
+    src: url('../fonts/ralewaymedium.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Raleway bold, sans-serif';
+    src: url('../fonts/ralewaybold.woff') format('woff');
+    font-weight: norma;
+    font-style: normal;
+}
+@font-face {
     font-family: 'Raleway semibold, sans-serif';
     src: url('../fonts/ralewaysemibold.woff') format('woff');
     font-weight: norma;
@@ -38,6 +56,13 @@
 @font-face {
     font-family: 'Raleway extra bold, sans-serif';
     src: url('../fonts/ralewayextrabold.woff') format('woff');
+    font-weight: norma;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto Regular, sans-serif';
+    src: url('../fonts/Roboto-Regular.woff') format('woff');
     font-weight: norma;
     font-style: normal;
 }

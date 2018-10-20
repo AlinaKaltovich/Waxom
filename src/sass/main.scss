@@ -1,10 +1,6 @@
 @import url("reset.scss");
 @import "~bootstrap/scss/bootstrap.scss";
 @import url("sass/fonts.scss");
-@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,600,800');
-/*font-family: 'Raleway', sans-serif;*/
-@import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400');
-/*font-family: 'Montserrat', sans-serif;*/
 @import url("fonts/fontello/pencil.scss");
 
 
@@ -82,6 +78,7 @@ $text-size: 16px;
     background-size: cover;
     padding-top: 5px;
     .navbar{
+        max-width: 1190px;
         padding: 10px 10px;
         z-index: 6;
         .wrapper{
@@ -103,8 +100,8 @@ $text-size: 16px;
                 right: 0;
                 position: absolute;
                 visibility: hidden;
-                width: 200px;
-                align-items: flex-start;
+                width: 100%;
+                align-items: center;
                 .nav-link{
                     color: $color-main;
                     font-family: $font-text;
@@ -122,10 +119,15 @@ $text-size: 16px;
         .wrapper:hover{
             border-color: $color-alt;
             .wrapper-line{
-                background: $color-alt;
+                background: transparent;
             }
             .navbar-nav{
                 visibility: visible;
+                position: absolute;
+                width: 230px;
+                top: -25px;
+                background: rgba(0, 0, 0, 0.9);
+                border-radius: 3.2px;
             }
         }
         .navbar-item{
@@ -559,9 +561,7 @@ $text-size: 16px;
                     padding-top: 5px;
                     padding-bottom: 5px;
                     background: #252525;
-                    font-family: $font-text; /*должен быть другой*/
-                    line-height: 20px;
-                    font-size: 12px;
+                    font: 12px/20px 'Roboto Regular, sans-serif';
                     vertical-align: middle;
                     border-radius: 0 0 3px 3px;                
                 }
@@ -571,7 +571,7 @@ $text-size: 16px;
             }
             .card-body{
                 .card-title{
-                    font-family: $font-text-alt;
+                    font-family: 'Raleway medium, sans-serif';
                     color: $conteiner-h-color;
                 }
                 .card-text{
@@ -686,8 +686,7 @@ $text-size: 16px;
                     margin-bottom: 20px;
                 }
                 .sidebar-h{
-                    font-family: $font-text-alt;
-                    font-weight: bold;
+                    font-family: 'Raleway bold, sans-serif';
                     line-height: 70px;
                     color: #ffffff;
                 }
@@ -709,9 +708,9 @@ $text-size: 16px;
                 }
                 .read-more{
                     display: none;
+                    font-family: 'Montserrat regular, sans-serif';
                     margin: 0 0 20px 0;
                     color: #ffffff;
-                    font-weight: bold;
                     text-decoration: none;
                 }
                 .read-more::after{
@@ -857,9 +856,7 @@ $text-size: 16px;
                 margin-bottom: 15px;
             }
             .count{
-                font-family: $font-text;
-                font-size: 30px;
-                font-weight: 200;
+                font: 30px 'Montserrat ultra light, sans-serif';
                 color: $color-main;
             }
             .count-name{
@@ -1019,9 +1016,7 @@ $text-size: 16px;
             top:50%;
             left: 17%;
             .title{
-                font-family: $font-text-alt;
-                font-weight: 500;
-                font-size: 30px;
+                font: 30px 'Raleway medium, sans-serif';
             }
             .text{
                 font-family: $font-text;
@@ -1030,8 +1025,7 @@ $text-size: 16px;
                 line-height: 20px;
             }
             .duration{
-                font-family: $font-text;
-                font-size: 14px;
+                font-family:14px 'Montserrat regular, sans-serif';
                 color: $color-alt;
             }
         }
@@ -1097,7 +1091,7 @@ $text-size: 16px;
             .navbar{
                 align-items: baseline;
                 position: absolute;
-                padding: 40px 0;
+                padding-bottom: 40px;
                 left: 50%;
                 margin-left: -590px;
                 z-index: 6;
@@ -1119,11 +1113,29 @@ $text-size: 16px;
                         align-items: baseline;
                     }
                 }
+                .wrapper:hover{
+                    .navbar-nav{
+                        position: static;
+                        width: 100%;
+                        background: none;
+                    }
+                }
+                .navbar-item{
+                    color: $color-main;
+                    font-size: 20px;
+                    .fas, .far{
+                        font-size: 16px;
+                    }
+                    .fas:hover, .far:hover{
+                        cursor: pointer;
+                        color: $color-alt;
+                    }
+                }
             }
             .slider-main{
                 max-width: 1630px;
                 .slider-item{
-                    margin: 30% auto 0 auto;
+                    margin: 26vw auto 0 auto;
                     padding: 0;
                 }
                 .next, .last{
